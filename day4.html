@@ -1,0 +1,194 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(/home/jtd2024/Downloads/pixel.jpeg);
+            background-repeat: no-repeat;
+            height: 500px;
+            background-size: cover;
+         }
+        .container{
+            width: 1000px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 5px gray;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <marquee direction="right" scrollamount="20">
+        <h1>WELCOME TO OUR PAGE</h1>
+    </marquee>
+    <div class="container">
+        <form>
+            <h2>Login</h2>
+            <input type="text" id="fname" value="" placeholder="Username"><br><br>
+            <input type="password" id="password" value="" placeholder="Password"><br>
+            <div class="div1">
+            <input type="checkbox" id="checkbox">Remember me
+            <a>Forgot Password?</a>
+            </div>
+            <button>Login</button>
+            <p>Don't have an account?Register</p>
+        </form>
+        </div>
+   
+    
+</body>
+</html> -->
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+         text-align: center;
+        }
+  </style>
+</head>
+<body>
+  <h1 style="color: green;">Price Range Slider</h1>
+
+  <label>minimum price</label>
+  <input type="text" id="text" name="text" class="text" placeholder="2500"><br><br>
+  <label>maximum price</label>
+  <input type="" id="" name="" placeholder="8500"><br><br>
+  <input type="range" id="" input type="range" >
+  
+  
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P><b>Being a girl </b></P>
+    <p><strong>can become a difficult</strong></p>
+    <p><i> life style. </i></p>
+    <p><em>Between our stages in life</em></p>
+    <p><mark>staggering attitudes</mark></p>
+    <P><delete>and emotions… </delete></P>
+    <p><ins>I dont know how </ins></p> 
+    <p><u>we would get through it</u></p>
+    <dl>
+        <dt>Term</dt>
+        <dd>Definition of the term</dd>
+    </dl>
+    <p>hsu is an</p><br>
+    <p>intelligent boy</p>
+    <p>2<sup>6</sup></p>
+    <p>H<sub>2</sub>o</p>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+    <ol>
+        <li>iha</li>
+        <li>esh</li>
+    </ol>
+    <p>Here is a <a href="ex.html">link to Example.com</a>.</p>
+    <img src="/home/jtd2024/Pictures/download (1).jpeg" alt="Example Image">
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Stadium</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars if the image is larger than the viewport */
+            font-family: Arial, sans-serif;
+        }
+        img {
+            position: absolute; /* Position image relative to the viewport */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh; /* Make the image cover the entire viewport height */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            z-index: 0; /* Place the image behind other elements */
+        }
+        .name {
+            position: absolute; /* Position relative to the viewport */
+            top: 20px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+            font-size: 50px; /* Adjust size as needed */
+            color: white; /* Ensure text is readable */
+            z-index: 1; /* Ensure the title is above the image */
+        }
+        div {
+            background-color: rgba(61, 49, 233, 0.7); /* Semi-transparent background */
+            height: 100px;
+            width: auto;
+            padding: 10px;
+            border-radius: 10px;
+            border:4px solid #ffff;
+            position: absolute; /* Position relative to the viewport */
+            top:40%;
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+            text-align: center;
+            z-index: 1; /* Ensure the div is above the image */
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            color: white; /* Ensure text is readable on the background */
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="name">ICC WORLD CUP 2024</h1>
+    <img src="https://www.shutterstock.com/image-illustration/grand-stadium-full-spectators-expecting-600nw-1762180874.jpg" alt="Cricket Stadium">
+    <div>
+        <h1 id="hrs">00:</h1>
+        <h1 id="min">00:</h1>
+        <h1 id="sec">00</h1>
+    </div>
+    <script>
+        let hrs = document.getElementById("hrs");
+        let min = document.getElementById("min");
+        let sec = document.getElementById("sec");
+
+        setInterval(() => {
+            let currentTime = new Date();
+            let hours = currentTime.getHours();
+            let minutes = currentTime.getMinutes();
+            let seconds = currentTime.getSeconds();
+
+            // Convert 24-hour format to 12-hour format
+            hours = hours % 12;
+            hours = hours || 12; // the hour '0' should be '12'
+            hours = (hours < 10 ? "0" : "") + hours;
+            minutes = (minutes < 10 ? "0" : "") + minutes;
+            seconds = (seconds < 10 ? "0" : "") + seconds;
+
+            hrs.innerHTML = hours + "hr:";
+            min.innerHTML = minutes + "min:";
+            sec.innerHTML = seconds + "sec";
+        }, 1000);
+    </script>
+</body>
+</html>
+
+
