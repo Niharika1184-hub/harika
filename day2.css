@@ -1,0 +1,41 @@
+
+/* Basic reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the content within the body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between spans */
+}
+
+.center span {
+    display: block;
+    width: 50px; /* Width of each span */
+    height: 50px; /* Height of each span */
+    background-color: #3498db; /* Blue background color */
+    border-radius: 50%; /* Make spans circular */
+    /* Optional: Add some box shadow for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+ 
+

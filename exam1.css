@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+  }
+  body{
+    background-color: burlywood;
+  }
+  .class{
+    background-color: lightgoldenrodyellow;
+     height:auto;
+     width: auto;
+     padding:20px;
+     
+  }
+  .right-align{
+   float: right;
+   margin: left 5px;
+  }
+ 

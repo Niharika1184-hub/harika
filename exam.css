@@ -1,0 +1,12 @@
+.div1{
+    background-color: aqua;
+    
+  
+
+}
+li{
+    display :flex;
+    list-style-type:None;
+    padding-right: 5px;
+}
+

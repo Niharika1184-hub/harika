@@ -1,0 +1,191 @@
+   <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border-color: blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+    <h1 style="color: blue;">Please complete our survey</h1>
+    <h2>contact information</h2>
+    <form action="">
+        <label for="textbox" style="color: blue;">E mail address: </label>
+        <input type="text" name=" textbox"  placeholder="" ><br>
+        <label for="text box"  style="color: blue;">First name:</label>
+        <input type="text" name="" placeholder=""><br>
+        <label for="textbox" style="color:blue;">Last name:</label>
+        <input type="text" name="" placeholder=""><br>
+        <h2>Geographic information</h2>
+        <label for="textbox" style="color:blue;">State:</label>
+        <input type="text" name="" placeholder="Two Characters"><br>
+        <label for="textbox" style="color:blue;">Zip code:</label>
+        <input type="text" name="" placeholder="Five digits"><br>
+        <h2>How did you hear about us ?</h2>
+        <label style="color: blue;">Web search:</label>
+        <input type="checkbox" id="checkbox" name=""><br>
+        <label style="color: blue;">Facebook:</label>
+        <input type="checkbox" id="checkbox" name=""><br>
+        <label style="color: blue;">Twitter:</label>
+        <input type="checkbox" id="checkbox" name=""><br>
+        <label style="color: blue;">Email message:</label>
+        <input type="checkbox" id="checkbox" name=""><br>
+        <h2>Thnak you for taking our survey !</h2>
+         
+        <label  type="button" id="button"></label>
+        <input type="submit" value="submit">
+        <label type="button" id="button"></label>
+        <input type="reset" value="reset">     
+        
+    </form>
+
+    </div>
+
+    
+    
+</body>
+</html>   -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        body{
+            background-image: url(/home/jtd2024/Downloads/cloud.jpeg) ;
+            width:auto;
+            height:auto;
+            padding: 5px;
+            background-repeat:no-repeat;
+            border-radius: 30px;
+            background-size: cover;
+        
+        }
+        input{
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 8px;
+            padding-top:8px;
+        }
+        
+
+        
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Personal information Form</h1>
+    <h4>General info</h4><hr style="background-color: beige;">
+    
+    
+        <form action="" > 
+            <label >Name</label>
+            <input type="text" style="border-radius: 30px;"  placeholder="first name" >
+            <input type="text" style="border-radius: 30px; text-align: center;" placeholder="last name" ><br><br>
+            <label >Date of birth</label>
+            
+            <input type="date" name="dob" style="border-radius: 30px;" placeholder="" >
+           <br>
+           <label>Gender</label><br>
+           <input type="checkbox"  id="male" value="male"><span>male</span>
+           <input type="checkbox" name="gender" id="female" value="Female"><span>Female</span>
+           <input type="checkbox" name="gender" id="others" value="others"><span>others</span><br>
+           <label>Address</label><br><br>
+           <input type="text" style="border-radius: 30px;" name="address" id="add" placeholder="street address"><br><br>
+           <input type="text"  style="border-radius: 30px;" name="address" id="add" placeholder="address line2"><br><br>
+           <input type="text" style="border-radius: 30px;" name="address" id="add" placeholder="city">
+           <input type="text"  style="border-radius: 30px;"  name="address" id="add" placeholder="state/region/province"><br><br>
+           <input type="text" style="border-radius: 30px;" name="address" id="add" placeholder="postal/zipcode">
+           <input type="text" style="border-radius: 30px;" name="address" id="" placeholder="country"><br><br>
+           <label>E mail-address</label><br>
+           <input type="text" style="border-radius: 30px;" name="text" id="text" placeholder=""><br><br>
+           <label>Phone</label><br>
+           <input type="text" style="border-radius: 30px;" name="text" ><br><br>
+        <div style="margin-left: 400px;">
+           <input type="text" style="  background-color: yellow;"  placeholder="submit" >
+        </div>   
+
+           
+
+            
+    </form>
+
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <form id="quiz-form" action="first page.html" method="get">
+        <div class="question-container" id="question-1">
+            <div class="question">What is the capital of France?</div>
+            <div class="options">
+                <label><input type="radio" name="q1" value="Paris"> Paris</label><br>
+                <label><input type="radio" name="q1" value="London"> London</label><br>
+                <label><input type="radio" name="q1" value="Berlin"> Berlin</label><br>
+                <label><input type="radio" name="q1" value="Madrid"> Madrid</label>
+            </div>
+            <div class="navigation-buttons">
+                <button type="button" class="next-btn" onclick="showQuestion(2)">Next</button>
+            </div>
+        </div>
+
+        <div class="question-container" id="question-2" style="display: none;">
+            <div class="question">What is 2 + 2?</div>
+            <div class="options">
+                <label><input type="radio" name="q2" value="3"> 3</label><br>
+                <label><input type="radio" name="q2" value="4"> 4</label><br>
+                <label><input type="radio" name="q2" value="5"> 5</label><br>
+                <label><input type="radio" name="q2" value="6"> 6</label>
+            </div>
+            <div class="navigation-buttons">
+                <button type="button" class="prev-btn" onclick="showQuestion(1)">Previous</button>
+                <button type="button" class="next-btn" onclick="showQuestion(3)">Next</button>
+            </div>
+        </div>
+
+        <div class="question-container" id="question-3" style="display: none;">
+            <div class="question">What is the capital of Japan?</div>
+            <div class="options">
+                <label><input type="radio" name="q3" value="Beijing"> Beijing</label><br>
+                <label><input type="radio" name="q3" value="Seoul"> Seoul</label><br>
+                <label><input type="radio" name="q3" value="Tokyo"> Tokyo</label><br>
+                <label><input type="radio" name="q3" value="Bangkok"> Bangkok</label>
+            </div>
+            <div class="navigation-buttons">
+                <button type="button" class="prev-btn" onclick="showQuestion(2)">Previous</button>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function showQuestion(questionNumber) {
+            const totalQuestions = 3;
+            for (let i = 1; i <= totalQuestions; i++) {
+                document.getElementById('question-' + i).style.display = (i === questionNumber) ? 'block' : 'none';
+            }
+        }
+    </script>
+</body>
+</html>

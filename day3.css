@@ -1,0 +1,119 @@
+body {
+  background-image:url(../../Pictures/Wallpapers/flah.jpeg);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  position: relative; 
+  width: 250px;
+  height: 250px;
+  background-color: orangered;
+  box-shadow: 0px 0px 50px 3px #000;
+  animation: ani 3s infinite;
+  animation-delay: 0.3s;
+}
+
+span {
+  position: absolute;
+  box-shadow: 0px 0px 25px #000;
+}
+
+span:nth-child(1) {
+  width: 220px;
+  height: 220px;
+  background-color:orangered;
+  left: 6%;
+  top: 6%;
+  animation: ani 3s infinite;
+  animation-delay: 0.3s;
+}
+
+span:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  left: 10%;
+  top: 10%;
+  animation: ani 3s infinite;
+  animation-delay: 0.4s;
+}
+
+span:nth-child(3) {
+  width: 180px;
+  height: 180px;
+  background-color:rgb(16, 16, 193);
+  left: 14%;
+  top: 14%;
+  animation: ani 3s infinite;
+  animation-delay: 0.5s;
+}
+
+span:nth-child(4) {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  left: 18%;
+  top: 18%;
+  animation: ani 3s infinite;
+  animation-delay: 0.6s;
+}
+
+span:nth-child(5) {
+  width: 140px;
+  height: 140px;
+  background-color: green;
+  left: 22%;
+  top: 22%;
+  animation: ani 3s infinite;
+  animation-delay: 0.7s;
+}
+
+span:nth-child(6) {
+  width: 120px;
+  height: 120px;
+  background-color: green;
+  left: 26%;
+  top: 26%;
+  animation: ani 3s infinite;
+  animation-delay: 0.8s;
+}
+
+span:nth-child(7) {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  left: 30%;
+  top: 30%;
+  animation: ani 3s infinite;
+  animation-delay: 1s;
+}
+span:nth-child(8) {
+  width: 80px;
+  height: 80px;
+  background-color: green;
+  left: 35%;
+  top: 35%;
+  animation: ani 3s infinite;
+  animation-delay: 1s;
+}
+
+
+@keyframes ani {
+  0% {
+      transform: rotate(0deg);
+  }
+  20% {
+      transform: rotate(95deg);
+  }
+  50% {
+      transform: rotate(360deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+

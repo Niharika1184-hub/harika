@@ -1,0 +1,236 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        .box{
+            background-color:rgb(226, 218, 207);
+            height: 400px;
+            width:250px;
+            border-radius: 30px;
+            border: 3px solid red;
+        }
+        .para{
+            color: red;
+            font-size: 50px;
+            padding-left: 10px;
+            margin-top: 0cm;
+        }
+        
+        
+        .dia{
+            color: red;
+            font-size: 70px;
+            padding-left: 10px;
+            margin-top: -1.5cm;
+        }
+        .dia1{
+            color: red;
+            font-size: 150px;
+            margin-top: -2cm;
+            margin-left: 2.2cm;
+        }
+        .para1{
+            color: red;
+            font-size: 50px;
+            padding-left: 10px;
+            transform: rotate(180deg);
+            margin-top: -2cm;
+            
+        }
+        .dia2{
+            color: red;
+            font-size: 70px;
+            padding: 10px;
+            margin-top: -2.4cm;
+            text-align: end;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div>
+        <h1 class="para">A</h1>
+        <h1 class="dia">&#9830</h1>
+
+    </div>
+ 
+   
+    <div>
+        <h1 class="dia1">&#9830</h1>
+    </div>
+    <div>
+        <h1 class="dia2">&#9830</h1>
+        <h1 class="para1">A</h1>
+        <div>
+            <h1 class="para3">A</h1>
+            <h1 class="dia">&#9830</h1>
+    
+        </div>
+    </div>
+ 
+
+</div>
+
+   
+</body>
+</html> 
+ -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+        .box{
+            background-color: plum;
+            height: 520px;
+            width: 600px;
+            margin-left: 300px;
+            align-content:center;
+            position: absolute;
+            padding:15px;
+        }
+        button{
+            padding: 10px;
+            width:100px;
+            background-color: orange;
+            border-radius: 50px;
+            margin-left: 5cm;
+        }
+        select{
+            width:150px;
+            border-radius: 5px;
+        
+        }
+        #fmail,#fnum,#add,#add2,#add4,#add3,#amount,#fname{
+            width:200px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <label>🌼🫧</label> <label style="margin-left: 500px;">🌼🫧</label><br>
+        <label style="margin-left: 250px;">👻</label>
+        <h1>Halloween Donation Form</h1><hr>
+        <form>
+            <label>Name</label>
+            <input type="text" id="fname" placeholder="First Name">
+            <input type="text" id="fname" placeholder="Last Name"><br>
+            <label>Email Address</label>
+            <input type="text" id="fmail" ><br>
+            <label>Phone number</label>
+            <input type="text" id="fnum"><br>
+            <label>Address</label>
+            <input type="text" id="add" placeholder="Street address"><br>
+            <input type="text" id="add2" placeholder="Address line2"><br>
+            <input type="text" id="add3" placeholder="city"><input type="text" id="text" placeholder="State/region/province"><br>
+            <input type="text" id="add4" placeholder="postal/zipcode">
+            
+            <select>
+                <option>country</option>
+                <option>India</option>
+                <option>srilanka</option>
+                <option>america</option>
+            </select><br>
+            <label>Donation amount</label>
+            <input type="text" id="amount" ><label>USD</label><br>
+            <label>Would you like to recive updates about our charity work ?</label>
+            <input type="radio" id="yes" name="yes">yes
+            <input type="radio" id="No" name="No">No<br><br>
+            <input type="checkbox" id="text" >
+            <label>Terms and conditions</label>
+            <h5>by checking this box, i agree to this terms and conditions of the donation</h5>
+            <button>submit</button><br>
+        <label >🌼🫧</label>
+        <label style="margin-left: 560px;">🌼🫧</label>
+        </form>
+    </div>
+
+    
+</body>
+</html>  -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            background-color: rgb(170, 235, 235);
+        }
+        .box {
+            height: 350px;
+            width: 300px;
+            background-color: rgb(247, 165, 165);
+            margin: 2cm 4cm;
+            padding: 20px;
+            border-radius: 15px;
+            border: 3px solid whitesmoke;
+        }
+        .btn {
+            width: 250px;
+            margin: 5px;
+            margin-left: 0.7cm;
+            padding: 8px;
+            text-align: left;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+        .next, .prev {
+            background-color: rgb(135, 120, 235);
+            color: white;
+            padding: 10px;
+            width: 100px;
+            margin-left: 0.7cm;
+            cursor: pointer;
+        }
+        .prev {
+            margin-left: 0.5cm;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>Simple Quiz</h1>
+    <hr>
+    <p id="question">Questions are</p>
+    <div id="answer-buttons">
+        <!-- Buttons will be dynamically inserted here by JavaScript -->
+        <button>option1</button>
+       
+
+    </div>
+    <button id="prev" class="prev hidden">Previous</button>
+    <button id="next" class="next">Next</button>
+</div>
+<script src="abbo.js"></script>
+</body>
+</html>
